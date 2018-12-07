@@ -16,6 +16,7 @@ USER_ID = 'Your user id'
 along with the file README.md.
 
 # Usage
+- adfly_shorten.py
 ```
 usage: adfly_shorten.py [-h] -u URL [-t TYPE]
 
