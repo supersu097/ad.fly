@@ -6,7 +6,7 @@ Implemented the cmd line interface based on the official python api example
 - Language: Python 2.7.10
 
 # Prerequisite
-- create a .py file `setting.py` within following lines
+- Create a .py file `setting.py` within following lines
 ```python
 SECRET_KEY = 'Your secret key'
 PUBLIC_KEY = 'Your public key'
@@ -35,3 +35,7 @@ $ python2.7 adfly_shorten.py -u 'www.google.com' -t int
 The shortened url is:
 http://turboagram.com/CCr8
 ```
+
+# Reference
+- [Official Documentation](https://adf.ly/static/other/adfly_api_v1_documentation.pdf?v=20171213)
+- [Official API Client Examples](https://adf.ly/static/other/adfly_api_v1_documentation.pdf?v=20171213)
