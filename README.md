@@ -11,7 +11,7 @@ Implemented the cmd line interface based on the official python api example
 SECRET_KEY = 'Your secret key'
 PUBLIC_KEY = 'Your public key'
 # Notice that below it needs integear type
-USER_ID = Your user id
+USER_ID = 'Your user id'
 ```
 along with the file README.md.
 
