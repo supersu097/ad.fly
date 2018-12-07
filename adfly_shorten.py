@@ -95,9 +95,9 @@ class AdflyApi():
             hashlib.sha256).hexdigest()
 
 
-def main(urls, advert_type):
+def main(url, advert_type):
     api = AdflyApi()
-    result = api.shorten(urls=urls, domain=0,
+    result = api.shorten(urls=url, domain=0,
                          advert_type=advert_type, group_id=None)
     print('The shortened url is:\n' + result['data'][0]['short_url'])
 
@@ -107,10 +107,11 @@ if __name__ == '__main__':
         description='Randomly shorten your url via adf.ly')
 
     parser.add_argument(
-        '-u', '--urls',
+        '-u', '--url',
         type=str,
         required=True,
-        help='the url you wanna shorten')
+        nargs=1,
+        help='the single url you wanna shorten')
     parser.add_argument(
         '-t', '--type',
         type=str,
@@ -118,4 +119,4 @@ if __name__ == '__main__':
         help="the ads type you wanna use, and it's banner by default"
     )
     args = parser.parse_args()
-    main(urls=args.urls, advert_type=args.type)
+    main(url=args.url, advert_type=args.type)
