@@ -116,7 +116,8 @@ if __name__ == '__main__':
         '-t', '--type',
         type=str,
         default='banner',
-        help="the ads type you wanna use, and it's banner by default"
+        help="the ads type you wanna use, and this arg is 'banner' by default,"
+             "and pass 'int' to get interstitial advertising"
     )
     args = parser.parse_args()
     main(url=args.url, advert_type=args.type)
