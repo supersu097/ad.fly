@@ -97,9 +97,9 @@ class AdflyApi():
 
 def main(urls, advert_type):
     api = AdflyApi()
-    from pprint import pprint
-    pprint(api.shorten(urls=urls, domain=0,
-                       advert_type=advert_type, group_id=None))
+    result = api.shorten(urls=urls, domain=0,
+                         advert_type=advert_type, group_id=None)
+    print('The shortened url is:\n' + result['data'][0]['short_url'])
 
 
 if __name__ == '__main__':
